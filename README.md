@@ -1,8 +1,5 @@
-# 📊 Data Room Intelligence Suite
+#  Data Room Intelligence Suite
 
-<p align="center">
-  <img src="assets/logo.svg" alt="Data Room Logo" width="180"/>
-</p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python Version">
@@ -14,13 +11,13 @@
 
 ---
 
-## 🏗️ Architectural Overview
+##  Architectural Overview
 
 **Data Room** is a modular, production-ready analytical web application engineered in Python and powered by Streamlit. It provides a robust pipeline for end-to-end dataset lifecycle management—encompassing strict data ingestion, programmatic data cleaning, granular exploration, statistical profiling, and multi-format export capabilities.
 
 ---
 
-## ⚙️ Core Modules & Capabilities
+##  Core Modules & Capabilities
 
 * **Ingestion Layer (`core/importer.py`):** Secure payload parsing with structural integrity checks for tabular formats (CSV).
 * **Sanitization Engine (`core/cleaner.py`):** Algorithmic mitigation of missing values, duplicate row dropping, and deterministic type casting.
@@ -30,7 +27,7 @@
 
 ---
 
-## 🛠️ Technology Stack
+##  Technology Stack
 
 * **Language:** Python
 * **Interface:** Streamlit[cite: 1]
@@ -39,7 +36,7 @@
 
 ---
 
-## 🚀 Local Deployment Guide
+##  Local Deployment Guide
 
 ### Prerequisites
 * Python `3.8` or higher installed on your system.
@@ -50,3 +47,5 @@
 1. **Clone or navigate to the repository directory:**
    ```bash
    cd DATA-ROOM
+   pip install -r requirements.txt
+   python -m streamlit run app.py
