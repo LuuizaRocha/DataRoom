@@ -1,37 +1,52 @@
-# 📊 Data Room
+# 📊 Data Room Intelligence Suite
 
-> An interactive web application built with Python and Streamlit for importing, cleaning, exploring, analyzing, and exporting datasets.
+<p align="center">
+  <img src="assets/logo.svg" alt="Data Room Logo" width="180"/>
+</p>
 
----
-
-## 🚀 Features
-
-- **📥 Data Import:** Support for loading files (such as CSV) and quick initial preview.
-- **🧹 Data Cleaning:** Tools to handle missing values, duplicates, and adjust data formats.
-- **🔍 Data Explorer:** Filters, sorting, and detailed inspection of the dataset.
-- **📈 Analytics & Metrics:** Interactive charts and descriptive statistics for extracting insights.
-- **📤 Export Center:** Options to download processed data in various formats.
-
----
-
-## 🛠️ Technologies Used
-
-- **Python**
-- **Streamlit** (for the interactive web interface)
-- **Pandas / NumPy** (for data manipulation and analysis)
-- **Pytest** (for automated testing)
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.8%2B-blue.svg" alt="Python Version">
+  <img src="https://img.shields.io/badge/Streamlit-1.x-red.svg" alt="Streamlit">
+  <img src="https://img.shields.io/badge/Pandas-Data%20Processing-green.svg" alt="Pandas">
+  <img src="https://img.shields.io/badge/Pytest-Automated%20Testing-orange.svg" alt="Pytest">
+  <img src="https://img.shields.io/badge/License-MIT-lightgrey.svg" alt="License">
+</p>
 
 ---
 
-## ⚙️ How to Run the Project on Your Computer
+## 🏗️ Architectural Overview
 
-Follow the steps below to run the project locally via terminal:
+**Data Room** is a modular, production-ready analytical web application engineered in Python and powered by Streamlit. It provides a robust pipeline for end-to-end dataset lifecycle management—encompassing strict data ingestion, programmatic data cleaning, granular exploration, statistical profiling, and multi-format export capabilities.
 
-### 1. Prerequisites
-Make sure you have **Python** installed on your machine (version 3.8 or higher recommended).
+---
 
-### 2. Clone the repository or download the files
-Open your terminal in the folder where you extracted the project (`DATA-ROOM`):
+## ⚙️ Core Modules & Capabilities
 
-```bash
-cd path/to/folder/DATA-ROOM
+* **Ingestion Layer (`core/importer.py`):** Secure payload parsing with structural integrity checks for tabular formats (CSV).
+* **Sanitization Engine (`core/cleaner.py`):** Algorithmic mitigation of missing values, duplicate row dropping, and deterministic type casting.
+* **Exploratory Analytics (`core/explorer.py` & `analytics.py`):** High-performance filtering, slicing, and descriptive statistical aggregation.
+* **Export Pipeline (`core/exporter.py`):** Streamlined serialization and egress of processed frames.
+* **Test Suite (`tests/`):** Comprehensive unit coverage using `pytest` to guarantee component reliability.
+
+---
+
+## 🛠️ Technology Stack
+
+* **Language:** Python
+* **Interface:** Streamlit[cite: 1]
+* **Data Manipulation:** Pandas, NumPy
+* **Testing Framework:** Pytest[cite: 1]
+
+---
+
+## 🚀 Local Deployment Guide
+
+### Prerequisites
+* Python `3.8` or higher installed on your system.
+* Pip package manager.
+
+### Step-by-Step Installation
+
+1. **Clone or navigate to the repository directory:**
+   ```bash
+   cd DATA-ROOM
